@@ -1,0 +1,606 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="304dp"
+        android:layout_height="193dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.797"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/c"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/delete_background"
+                android:paddingTop="5dp"
+                android:text="@string/clear"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                tools:ignore="NestedWeights" />
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/delete_background"
+                app:srcCompat="@drawable/ic_baseline_cancel_presentation_24" />
+
+            <TextView
+                android:id="@+id/per"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/operations_background"
+                android:paddingTop="5dp"
+                android:text="@string/percent"
+                android:textAlignment="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/divide"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/operations_background"
+                android:paddingTop="5dp"
+                android:text="@string/divide"
+                android:textAlignment="center"
+                android:textColor="#3F4D9E"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/seven"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:paddingTop="7dp"
+                android:background="@drawable/numbers_background"
+                android:text="@string/seven"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                tools:ignore="NestedWeights" />
+
+            <TextView
+                android:id="@+id/eight"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:paddingTop="7dp"
+                android:background="@drawable/numbers_background"
+                android:text="@string/eight"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/nine"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:paddingTop="7dp"
+                android:background="@drawable/numbers_background"
+                android:text="@string/nine"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/multiply"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/operations_background"
+                android:paddingTop="5dp"
+                android:text="@string/multiply"
+                android:textAlignment="center"
+                android:textColor="#424D9E"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/four"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:paddingTop="7dp"
+                android:background="@drawable/numbers_background"
+                android:text="@string/four"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                tools:ignore="NestedWeights" />
+
+            <TextView
+                android:id="@+id/five"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:paddingTop="7dp"
+                android:background="@drawable/numbers_background"
+                android:text="@string/five"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/six"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:paddingTop="7dp"
+                android:background="@drawable/numbers_background"
+                android:text="@string/six"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/minus"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/operations_background"
+                android:paddingTop="5dp"
+                android:text="@string/subtract"
+                android:textAlignment="center"
+                android:textColor="#3F4D9E"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/one"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:paddingTop="7dp"
+                android:background="@drawable/numbers_background"
+                android:text="@string/one"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                tools:ignore="NestedWeights" />
+
+            <TextView
+                android:id="@+id/two"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:paddingTop="7dp"
+                android:background="@drawable/numbers_background"
+                android:text="@string/two"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/three"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:paddingTop="7dp"
+                android:background="@drawable/numbers_background"
+                android:text="@string/three"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/operations_background"
+                android:paddingTop="5dp"
+                android:text="@string/add"
+                android:textAlignment="center"
+                android:textColor="#3F4D9E"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/zeroes"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:paddingTop="7dp"
+                android:background="@drawable/numbers_background"
+                android:text="@string/zeroes"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                tools:ignore="NestedWeights" />
+
+            <TextView
+                android:id="@+id/zero"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:paddingTop="7dp"
+                android:background="@drawable/numbers_background"
+                android:text="@string/zero"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/point"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:paddingTop="7dp"
+                android:background="@drawable/numbers_background"
+                android:text="@string/point"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/equals"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/operations_background"
+                android:paddingTop="5dp"
+                android:text="@string/equals"
+                android:textAlignment="center"
+                android:textColor="#3F4D9E"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/area"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="20dp"
+        android:background="@null"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:textAlignment="viewEnd"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.584" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="29dp"
+        android:layout_marginEnd="10dp"
+        android:maxLength="186"
+        android:textAlignment="textEnd"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/area"
+        app:layout_constraintVertical_bias="1.0">
+
+        <Button
+            android:id="@+id/cosinverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/numbers_background"
+            android:onClick="trigArcCosBTNPush"
+            android:text="@string/trigArcCos"
+            android:textAllCaps="false"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sin"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/sin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/numbers_background"
+            android:onClick="trigSinBTNPush"
+            android:text="@string/trigSin"
+            android:textAllCaps="false"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/square"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/numbers_background"
+            android:onClick="logBTNPush"
+            android:text="@string/Log"
+            android:textAllCaps="false"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@+id/powery"
+            app:layout_constraintTop_toBottomOf="@+id/openparenthesis"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/nlog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/numbers_background"
+            android:onClick="naturalLogBTNPush"
+            android:text="@string/naturalLog"
+            android:textAllCaps="false"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/log"
+            app:layout_constraintTop_toBottomOf="@+id/closeparenthesis"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/closeparenthesis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/numbers_background"
+            android:onClick="parCloseBTNPush"
+            android:text="@string/parenthesesClose"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/openparenthesis"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/root"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/numbers_background"
+            android:onClick="sqrtBTNPush"
+            android:text="@string/squareRoot"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/openparenthesis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/numbers_background"
+            android:onClick="parOpenBTNPush"
+            android:text="@string/parenthesesOpen"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@+id/modulus"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/modulus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/numbers_background"
+            android:onClick="absBTNPush"
+            android:text="@string/absoluteValue"
+            android:textAllCaps="false"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@+id/root"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/square"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/numbers_background"
+            android:onClick="xSquaredBTNPush"
+            android:text="@string/xSquared"
+            android:textSize="11sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/root"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/powery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/numbers_background"
+            android:onClick="xPowerYBTNPush"
+            android:text="@string/xPowerY"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@+id/square"
+            app:layout_constraintTop_toBottomOf="@+id/modulus"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/tan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/numbers_background"
+            android:onClick="trigTanBTNPush"
+            android:text="@string/trigTan"
+            android:textAllCaps="false"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@+id/cos"
+            app:layout_constraintTop_toBottomOf="@+id/log"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/sininverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/numbers_background"
+            android:onClick="trigArcSinBTNPush"
+            android:text="@string/trigArcSin"
+            android:textAllCaps="false"
+            android:textSize="11sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tan"
+            app:layout_constraintTop_toBottomOf="@+id/nlog"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/cos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/numbers_background"
+            android:onClick="trigCosBTNPush"
+            android:text="@string/trigCos"
+            android:textAllCaps="false"
+            android:textSize="11sp"
+            app:layout_constraintStart_toEndOf="@+id/sin"
+            app:layout_constraintTop_toBottomOf="@+id/powery"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/taninverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/numbers_background"
+            android:onClick="trigArcTanBTNPush"
+            android:text="@string/trigArcTan"
+            android:textAllCaps="false"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cosinverse"
+            app:layout_constraintTop_toBottomOf="@+id/cos"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/pi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/numbers_background"
+            android:onClick="piBTNPush"
+            android:text="@string/pi"
+            android:textAllCaps="false"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/taninverse"
+            app:layout_constraintTop_toBottomOf="@+id/tan"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="UsingOnClickInXml" />
+
+        <Button
+            android:id="@+id/e"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:background="@drawable/numbers_background"
+            android:onClick="eBTNPush"
+            android:text="@string/e"
+            android:textAllCaps="false"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/pi"
+            app:layout_constraintTop_toBottomOf="@+id/sininverse"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="UsingOnClickInXml" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
